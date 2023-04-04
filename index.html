@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Turnos</title>
+  <!-- Enlace CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Solicite su Turno</h1>
+    <form id="formulario">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" id="nombre" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="text" id="apellido" class="form-control" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="edad" class="form-label">Edad</label>
+          <input type="number" id="edad" class="form-control" min="0" max="150" required>
+        </div>
+        <div class="col-md-6">
+          <label for="dia" class="form-label">Día</label>
+          <input type="date" id="dia" class="form-control" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <label for="hora" class="form-label">Hora</label>
+          <input type="time" id="hora" class="form-control" required>
+        </div>
+      </div>
+      <br/>
+      <button type="submit" id="submit" class="btn btn-primary">Asignar Turno</button>
+    </form>
+    <div id="ListaTurnos" class="mt-5">
+       <h1 class="text-center">Lista de Turnos</h1>
+    </div>
+    <div id="turnos" class="mt-5"></div>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Fecha</th>
+          <th scope="col">Hora</th>
+        </tr>
+      </thead>
+      <tbody id="turnero">
+        
+      </tbody>
+    </table>
+  </div>
+  <!-- Enlace JavaScript de Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!-- Vinculación con archivo Javascript-->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
+

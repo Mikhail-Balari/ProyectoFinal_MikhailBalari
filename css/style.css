@@ -1,0 +1,40 @@
+body {
+  background: #CD9400; 
+  background: linear-gradient(to right, #CD9400, #94AAAA);
+  animation: gradientBg 10s ease infinite;
+}
+
+@keyframes gradientBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.form-control {
+  border-radius: 100;
+}
+
+.btn-primary {
+  background-color: #1d2329;
+  border-color: #ffffff;
+  border-radius: 100;
+}
+
+.btn-primary:hover {
+  background-color: #94AAAA;
+  border-color: #000000;
+  color: #000000;
+  font-weight: bold;
+}
+
+
