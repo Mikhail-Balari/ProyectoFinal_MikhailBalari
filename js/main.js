@@ -58,7 +58,7 @@ const storage = {
   
   // Función para mostrar una notificación al paciente al asignar turno.
   function mostrarNotificacion() {
-   new Swal({
+   Swal.fire({
       title: "Turno guardado",
       text: "El turno ha sido guardado exitosamente",
       icon: "success",
