@@ -1,4 +1,4 @@
-import Swal from "sweetalert2";
+import Swal from "../node_modules/sweetalert2/src/sweetalert2";
 
 // Creo un objeto para manejar el almacenamiento en el local storage.
 const storage = {
