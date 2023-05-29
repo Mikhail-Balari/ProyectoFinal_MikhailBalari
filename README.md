@@ -1,4 +1,3 @@
-# ProyectoFinal_MikhailBalari
-Este es el proyecto final de Javascript
-Es un formulario para solicitar turnos, los cuales se van cargando en el localStorage y a su vez en el DOM mediante una lista.
-Utiliza Bootstrap y Sweetalert2.
+# Shift List
+This web application is a form to register turns, which are loaded in the localStorage and in turn in the DOM through a list.
+It uses Bootstrap and Sweetalert2. :smile: :rocket:
