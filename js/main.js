@@ -1,4 +1,4 @@
-import Swal from "../node_modules/sweetalert2/src/sweetalert2.js";
+
 
 // Creo un objeto para manejar el almacenamiento en el local storage.
 const storage = {
@@ -57,14 +57,14 @@ const storage = {
   }
   
   // Función para mostrar una notificación al paciente al asignar turno.
-  function mostrarNotificacion() {
-   Swal.fire({
-      title: "Turno guardado",
-      text: "El turno ha sido guardado exitosamente",
-      icon: "success",
-      button: "Aceptar"
-    });
-  }
+ // function mostrarNotificacion() {
+ //  Swal.fire({
+ //     title: "Turno guardado",
+ //     text: "El turno ha sido guardado exitosamente",
+ //     icon: "success",
+ //     button: "Aceptar"
+ //   });
+  //}
 
   // Función para procesar el formulario cuando el paciente ingresa sus datos.
   function procesarFormulario(event) {
