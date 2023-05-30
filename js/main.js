@@ -37,6 +37,7 @@ const storage = {
     for (let i = 0; i < turnos.length; i+=1) {
       let pacienteNombre = turnos[i].pacienteNombre;
       let pacienteApellido = turnos[i].pacienteApellido;
+      let edad = turnos[i].edad;
       let dia = turnos[i].dia;
       let hora = turnos[i].hora;
       let tr = document.createElement('tr');
@@ -45,13 +46,15 @@ const storage = {
       th.innerHTML = `${i+1}`;
       let tN = document.createElement('td');
       let tA = document.createElement('td');
+      let tE = document.createElement('td');
       let tD = document.createElement('td');
       let tH = document.createElement('td');
       tN.innerHTML = `${pacienteNombre}`;
       tA.innerHTML = `${pacienteApellido}`;
+      tE.innerHTML = `${edad}`;
       tD.innerHTML = `${dia}`;
       tH.innerHTML = `${hora}`; 
-      tr.innerHTML = th.outerHTML + tN.outerHTML + tA.outerHTML + tD.outerHTML + tH.outerHTML;
+      tr.innerHTML = th.outerHTML + tN.outerHTML + tA.outerHTML + tE.outerHTML + tD.outerHTML + tH.outerHTML;
       listaTurnos.appendChild(tr);
     }
   }
@@ -93,7 +96,7 @@ const storage = {
       // Asigno el turno al paciente y lo agrego a la lista de turnos.
       const pacienteNombre = `${nombre}`;
       const pacienteApellido = `${apellido}`;
-      turnos.push({ pacienteNombre, pacienteApellido, dia, hora });
+      turnos.push({ pacienteNombre, pacienteApellido, edad, dia, hora });
       mostrarListaTurnos();
       
       // Limpio el formulario.
