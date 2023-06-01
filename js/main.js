@@ -65,7 +65,7 @@ const storage = {
         title: "Turno guardado",
         text: "El turno ha sido guardado exitosamente",
         icon: "success",
-        button: "Aceptar"
+        confirmButtonText: "Aceptar"
       });
     }
 
